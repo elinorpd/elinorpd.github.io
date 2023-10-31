@@ -2090,7 +2090,7 @@ input, select, textarea {
 			}
 
 			.image.thumb:hover:after {
-				opacity: 1.0;
+				opacity: 0;
 			}
 
 			.image.thumb:hover:before {
@@ -2906,6 +2906,12 @@ input, select, textarea {
 			width: 4em;
 			z-index: 2;
 		}
+
+		.image.thumb:before, .image.thumb:hover:before {
+			background: none;
+			opacity: 1; /* Set to 1 to make sure the image is fully visible */
+		}
+		
 
 			.poptrox-popup .closer:before {
 				-moz-osx-font-smoothing: grayscale;
